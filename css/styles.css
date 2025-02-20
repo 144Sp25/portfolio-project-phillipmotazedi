@@ -36,6 +36,7 @@ header h3 {
     font-size: 1.0em;
     text-align: center;
 }
+/*end of styling for header*/
 
 /*style rules for navigation*/
 
@@ -61,6 +62,7 @@ nav a {
  text-decoration: none;
  color: #214525;
 }
+/* end of nav styling*/
 
 /* Style rules for main*/
 main {
@@ -72,8 +74,9 @@ main {
 img { 
 padding: 30px;}
 
+/* end of main styling*/
 
-/*style rues for the footer*/
+/*style rules for the footer*/
 footer {
  background-color: lightgray;
  color: #214525;
@@ -84,8 +87,10 @@ footer a {
  color: #214525;
  text-decoration: none;
 }
+/*end of footer styling*/
 
 /* style rules for contact.html*/
 iframe {
  padding: 30px;
 }
+/* end of contact styling*/
