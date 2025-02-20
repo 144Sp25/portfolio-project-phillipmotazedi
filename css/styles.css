@@ -1,0 +1,91 @@
+/*Phillip Motazedi
+ * 2/18/2025
+ * portfolio-project*/
+
+/* setting a style rule allows the styles to stay the same when going from
+ * browser to browser*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*color for header and style rules for Header*/
+header {
+    background-color: #214525;
+    color: #fff;
+    text-align: left;
+    padding: 44px 0;
+}
+
+header h1 {
+    font-size: 3.0em;
+    font-family: trebuchet ms, arial, sans-serif;
+    text-align: center;
+}
+
+header h3 {
+    font-size: 1.0em;
+    text-align: center;
+}
+
+/*style rules for navigation*/
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+nav {
+    background-color: lightgray;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+
+nav a {
+ text-decoration: none;
+ color: #214525;
+}
+
+/* Style rules for main*/
+main {
+    padding: 20px;
+    background-color: #4e5851;
+    color: white;
+}
+
+img { 
+padding: 30px;}
+
+
+/*style rues for the footer*/
+footer {
+ background-color: lightgray;
+ color: #214525;
+ padding: 30px;
+}
+
+footer a {
+ color: #214525;
+ text-decoration: none;
+}
+
+/* style rules for contact.html*/
+iframe {
+ padding: 30px;
+}
