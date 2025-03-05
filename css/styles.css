@@ -10,7 +10,12 @@
     box-sizing: border-box
 }
 
-
+.outfit-uniquifier {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 
 img {
     max-width: 100%;
@@ -46,6 +51,62 @@ nav ul {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Mobile Navigation */
+@media (max-width: 760px) {
+    nav li a {
+    display: block;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+    
+    main { 
+    padding: 10px
+        
+    } 
+    
+    nav ul {
+        display: block;
+        padding: 0;
+        margin: 0;
+        text-align: center; 
+    }
+
+    nav ul li {
+        display: block; 
+        margin: 10px 0; 
+    }
+
+    nav a {
+        font-size: 1.2em; 
+        padding: 10px; 
+    }
+    
+    h1 {
+        font-size: 5em;
+    }
+    
+   /* h3 {
+        font-size: 1.2em
+    }
+    */
+    img {
+        max-width: 100%
+    }
+}
 nav {
     background-color: lightgray;
     text-align: center;
