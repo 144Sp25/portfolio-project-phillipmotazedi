@@ -2,19 +2,11 @@
  * 2/18/2025
  * portfolio-project*/
 
-/* Global Reset and Base Styles*/
-
+/* Global Reset and Base Styles */
 body, header, nav, main, footer, img, h1, h3, ul {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.outfit-uniquifier {
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
 }
 
 body {
@@ -65,14 +57,17 @@ nav ul {
     text-decoration: none;
 }
 
+/* Mobile Navigation*/
 nav ul li {
-    display: inline;
-    margin-right: 40px;
+    display: block;
+    margin: 10px 0;
 }
 
 nav a {
     text-decoration: none;
     color: #214525;
+    font-size: 1.2em;
+    padding: 10px;
 }
 
 /* Main Section */
@@ -94,59 +89,26 @@ footer a {
     text-decoration: none;
 }
 
-/*  Contact Section  */
+/* Contact Section */
 iframe {
     padding: 30px;
+    display: none;
 }
 
-/*  Mobile-Specific Styles  */
-nav li a {
+/* Mobile View (Default) */
+#about {
     display: block;
-    color: #fff;
-    padding: 0.5em 1em;
-    text-decoration: none;
 }
 
-main {
-    padding: 10px;
-}
-
-nav ul {
-    display: block;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-nav ul li {
-    display: block;
-    margin: 10px 0;
-}
-
-nav a {
-    font-size: 1.2em;
-    padding: 10px;
-}
-
-h1 {
-    font-size: 5em;
-}
-
-img {
-    max-width: 100%;
-}
-
-/*  Tablet Viewport  */
-@media (min-width: 682px) {
-    nav li a {
-        display: block;
-        color: #fff;
-        padding: 0.5em 5em;
-        text-decoration: none;
-    }
-
+/* Tablet Viewport */
+@media screen and (min-width: 620px) {
     main {
         padding: 30px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
     }
 
     header h1 {
@@ -161,22 +123,18 @@ img {
     img {
         max-width: 95%;
     }
+    
+    iframe {
+    padding: 30px;
+    display: inline-block;
+}
 }
 
-/*  Desktop Viewport */
-@media (min-width: 1000px) {
-    header h1 {
-        font-size: 3.9em;
-    }
-
-    header h3 {
-        font-size: 2.0em;
-        padding: 30px;
-    }
-
-    img {
-        max-width: 90%;
-        display: block;
+/* Desktop Viewport */
+@media screen and (min-width: 1000px) {
+    nav ul li {
+        display: inline;  
+        margin-right: 40px; 
     }
 
     nav a:hover {
@@ -188,5 +146,32 @@ img {
         padding: 60px;
         max-width: 1200px;
         margin: 0 auto;
+    }
+
+    /* Two-column layout */
+    #about {
+        display: flex;  
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px; 
+        max-width: 1200px;  
+        margin: 0 auto;  
+    }
+
+    .about-image, .about-text {
+        flex: 1;  
+    }
+
+    .about-text ul {
+        list-style-type: none; 
+        font-size: 1.2em;  
+        line-height: 1.8;  
+        padding: 0; 
+    }
+
+    .about-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;  
     }
 }
